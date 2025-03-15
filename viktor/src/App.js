@@ -6,6 +6,36 @@ const Book = (prompt) => {
     <div>{prompt.title}</div>
   )
 }
+const SignIn = (props) => {
+  return(
+<div>{props.textbox}</div>
+  )
+}
+const BookList = () => {
+  return(
+    <ul>
+      <Book
+      title="Pet Sematary"
+      author="Stephen King"
+      price="25"
+      />
+      <Book
+      title="IT"
+      author="Stephen King"
+      price="20"
+      />
+    </ul>
+  )
+}
+const book = (props) => {
+  return(
+    <li className="book">
+      <div>{props.title}</div>
+      <div>{props.author}</div>
+      <div>{props.price}</div>
+    </li>
+  )
+}
 function App() {
   return (
     <div className="App">
@@ -23,6 +53,7 @@ function App() {
           Learn React
         </a>
         <Book title="Pod Igoto"></Book>
+        <Book title="Pet Semerary">Cena:25</Book>
       </header>
     </div>
   );
