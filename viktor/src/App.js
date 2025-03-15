@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+const Book = (prompt) => {
+  return(
+    <div>{prompt.title}</div>
+  )
+}
 function App() {
   return (
     <div className="App">
@@ -17,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <Book title="Pod Igoto"></Book>
       </header>
     </div>
   );
